@@ -14,24 +14,34 @@ O objetivo é implementar a funcionalidade de um **carrinho de compras** para um
 
 ## 📦 Funcionalidades
 - ✅ Listagem de produtos com **imagem, nome e preço**
+
 - ✅ Adicionar produtos ao carrinho
+
 - ✅ Aumentar/diminuir quantidade de cada item
+
 - ✅ Resumo do pedido atualizado em tempo real
+
 - ✅ Exibição do valor total acumulado
 
 ---
 
 ## 📂 Estrutura do Projeto
+
 /app/data/products → API que retorna os produtos
+
 layout.tsx → Layout global
+
 page.tsx → Página principal
 
 /components
+
 ProductCard.tsx → Card de produto
+
 Cart → Carrinho de compras
 
 
 /context
+
 CartContext.tsx → Contexto global do carrinho
 
 /public/img → Imagens dos produtos
@@ -41,15 +51,18 @@ CartContext.tsx → Contexto global do carrinho
 ## ⚙️ Como Rodar Localmente
 
 1. Clone o repositório:
-   git clone https://github.com/michele-oliveira/restroapp
-Instale as dependências:
 
+git clone https://github.com/michele-oliveira/restroapp
+   
+3. Instale as dependências:
 
 npm install
-Rode o servidor de desenvolvimento:
+
+3. Rode o servidor de desenvolvimento:
 
 npm run dev
-Abra no navegador:
+
+4. Abra no navegador:
 
 http://localhost:3000
 
@@ -57,18 +70,26 @@ http://localhost:3000
 
 ## 🛒 Demonstração
 Produtos
-Os produtos estão definidos em /app/api/products/route.ts e utilizam imagens disponíveis em /public/img.
+Os produtos estão definidos em /src/data/products e utilizam imagens disponíveis em /public/img.
 
 Exemplo de produto:
 
 {
+
   "photo": "/img/big-mac.png",
+  
   "name": "Big Mac",
+  
   "price": 5.99,
+  
   "active": false,
+  
   "quantity": 1
+  
 }
+
 Interface
+
 Tela principal com produtos em grid
 
 Cada card possui preço, nome e controles de quantidade
